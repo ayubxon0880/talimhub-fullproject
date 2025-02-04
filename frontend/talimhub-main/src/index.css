@@ -1,0 +1,98 @@
+@import url('https://fonts.cdnfonts.com/css/tt-firs-neue-trl');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.telraqam>*>*{
+  border: none;
+  padding: 10px;
+}
+.react-international-phone-input {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+/* .telraqam{
+  background: white !important;
+} */
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/montserrat-v26-latin/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/montserrat-v26-latin/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/montserrat-v26-latin/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/montserrat-v26-latin/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+#root, html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'TT Firs Neue Trial Var Roman', sans-serif;
+
+}
+#root{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex-grow: 1;
+}
+@layer components {
+  .primary-btn {
+    @apply bg-gradient-to-r from-primary to-secondary duration-300 py-2 px-6 text-white rounded-full hover:opacity-75 hover:shadow-[-19px_-16px_28px_0px_#96B26A16] active:brightness-50
+  }
+}
+
+.animated-wrapper {
+  animation-name: move-wrapper;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+.inter{
+  font-family: 'Montserrat';
+}
+@keyframes move-wrapper {
+  0% {
+    transform: translate(150%, 30%) rotate(0) scale(0.8);
+  }
+  50% {
+    transform: translate(60vw, 0vh) rotate(150deg) scale(1.2);
+  }
+  to {
+    transform: translate(40vw, 40vh) rotate(0deg) scale(0.8);
+  }
+}
+
+
+input{
+  border: 1px solid black;
+}

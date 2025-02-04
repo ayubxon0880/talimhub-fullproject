@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* App komponentiga asosiy style */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Kontentni asosiy qism uchun */
+.App-content {
+    flex: 1;
+}
+  

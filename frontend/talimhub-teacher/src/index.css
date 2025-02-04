@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* App komponentiga asosiy style */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Kontentni asosiy qism uchun */
+.App-content {
+    flex: 1;
+}
+
+
+:root {
+  --max-audio-width: 900px;
+}
+
+audio::-webkit-media-controls-timeline {
+  width: 100%;
+  max-width: 700px;
+}
+
+audio::-webkit-media-controls-panel {
+  width: 100%;
+  max-width: var(--max-audio-width);
+  display: flex;
+  justify-content: space-evenly !important;
+}
+
+audio::-webkit-media-controls-enclosure {
+  border-radius: 0;
+  border: 1px solid rgb(209, 209, 209);
+  background-color: transparent;
+  max-height: 90px;
+}
+
+audio {
+  width: 100%;
+  max-width: var(--max-audio-width);
+  height: 50px;
+}
